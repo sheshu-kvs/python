@@ -50,15 +50,41 @@
 # a.append(4)
 # print(b)
 
-a = [1, 2, 3]
-b = a
-print(b)
+# a = [1, 2, 3]
+# b = a
+# print(b)
 
-a = [1, 2, 3]
-b = a.copy()
+# a = [1, 2, 3]
+# b = a.copy()
 
-print(b);
+# print(b);
 
 
 # Global Varible & local Variable 
 
+
+# An Global an declared the Outside the function , An Local Variable are used to  declare the inside the function
+
+
+x=10;
+
+def fun():
+    x=5;
+    print(x);
+
+fun();
+
+print(x);
+
+
+def test():
+    x=x+1;  # before declaring the x value x we are not specified the any value
+    print(x);
+
+test();  
+
+
+a = 10
+b = 20
+a, b = b, a
+print(a, b)
