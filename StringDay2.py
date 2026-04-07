@@ -66,7 +66,6 @@ print(len(str));
 rev ="";
 # for x in range(len(str)-1, -1, -1):
 
-for x in range()
 
 
 
