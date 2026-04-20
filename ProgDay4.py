@@ -1,14 +1,14 @@
 
 #Replace all vowels in a string with *.
-str="hello , world";
-converted="";
-for x in range(len(str)):
-    val = str[x];
-    if val in 'aeiou':
-        converted = converted + "*";
-    else:
-        converted = converted + val;
-print("Updated Vowel ",converted);
+# str="hello , world";
+# converted="";
+# for x in range(len(str)):
+#     val = str[x];
+#     if val in 'aeiou':
+#         converted = converted + "*";
+#     else:
+#         converted = converted + val;
+# print("Updated Vowel ",converted);
 
 
 
@@ -16,10 +16,15 @@ print("Updated Vowel ",converted);
 
 
 str = "hello, world";
-
-
-for x  in range(len(str)-1):
+count = 1;
+sortval = sorted(val);
+print(sortval)
+for x  in range(len(sortval)-1):
     # val = sortedval[x];
-    if(str[x] != str[x+1]):
-        print("first non repeating chracter "+str[x]);
-        break;
+    if(sortval[x] == sortval[x+1]):
+        count = count+1;
+    else:
+        print(sortval[x] ,":", count); 
+        count = 1;
+
+print(sortval[x], ":" ,count);

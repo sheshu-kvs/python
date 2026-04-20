@@ -66,13 +66,6 @@ print(len(str));
 rev ="";
 # for x in range(len(str)-1, -1, -1):
 
-<<<<<<< HEAD
-=======
-
-# Ading the values
->>>>>>> 1cb4053d57df15c2cb4f4a386c1bc8cd44375c87
-
-
 
   
 
