@@ -164,3 +164,43 @@ print(val2.isidentifier())
 libraries=['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon'];
 joinghash="#".join(libraries);
 print(joinghash)
+
+
+
+# Use a tab escape sequence to write the following lines.
+# Name      Age     Country   City
+# Asabeneh  250     Finland   Helsinki
+
+
+print("Name\t\tAge\tCountry\t\tCity")
+print("Asabeneh\t250\tFinland\t\tHelsinki")
+
+# Use the string formatting method to display the following:
+# radius = 10
+# area = 3.14 * radius ** 2
+# The area of a circle with radius 10 is 314 meters square.
+
+radius = 10
+area = 3.14 * radius ** 2
+
+print(f"The area of a circle with radius {radius} is  {area} meters square");
+
+# Make the following using string formatting methods:
+# 8 + 6 = 14
+# 8 - 6 = 2
+# 8 * 6 = 48
+# 8 / 6 = 1.33
+# 8 % 6 = 2
+# 8 // 6 = 1
+# 8 ** 6 = 262144
+
+
+a=8;
+b=6;
+print(f"{a} + {b} = {a+b}");
+print(f"{a} - {b} = {a-b}");
+print(f"{a} * {b} = {a*b}");
+print(f"{a} / {b} = {a/b}");
+print(f"{a} % {b} = {a%b}");
+print(f"{a} // {b} = {a//b}");
+print(f"{a} ** {b} = {a**b}");
