@@ -135,3 +135,32 @@ print(company.index("C"));
 
 # Use index to determine the position of the first occurrence of F in Coding For All.
 print(company.index("F"));
+
+# Use rfind to determine the position of the last occurrence of l in Coding For All People.
+print(company.rfind("l"));
+
+# Does 'Coding For All' start with a substring Coding?
+print(company.startswith("Coding"))
+
+# Does 'Coding For All' end with a substring coding?
+print(company.endswith("Coding"))
+
+
+# Which one of the following variables return True when we use the method isidentifier():
+# 30DaysOfPython
+# thirty_days_of_python
+
+# Checks the valid string , it should not start with the number
+val1="30DaysOfPython";
+val2="thirty_days_of_python";
+
+print(val1.isidentifier())
+print(val2.isidentifier())
+
+
+# The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. 
+# Join the list with a hash with space string.
+
+libraries=['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon'];
+joinghash="#".join(libraries);
+print(joinghash)
