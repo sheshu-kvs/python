@@ -108,5 +108,66 @@ else:
 # it_companies.sort(key=str.lower,reverse=True);
 # print(it_companies)
 
-it_companies.reverse()
+# it_companies.reverse()
 print(it_companies)
+
+print(it_companies[0:3]);
+
+print(it_companies[3:6])
+
+# Remove the first IT company from the list
+it_companies.remove("meta");
+print(it_companies)
+
+
+# Remove the middle IT company or companies from the list
+it_companies.pop(3)
+print(it_companies);
+
+
+# Remove the last IT company from the list
+print(it_companies.pop());
+
+# Remove all IT companies from the list
+it_companies.clear();
+print(it_companies)
+
+# Destroy the IT companies list
+del it_companies;
+# print(it_companies)
+
+# 
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+full_stack=front_end+back_end;
+print(full_stack);
+
+# ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+# Sort the list and find the min and max age
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort();
+print(ages);
+
+# Sort the list and find the min and max age
+print(max(ages))
+print(min(ages))
+
+# Add the min age and the max age again to the list
+maxval = max(ages);
+minval = min(ages);
+ages.append(maxval);
+ages.append(minval);
+print(ages)
+
+# Find the median age (one middle item or two middle items divided by two)
+
+# Find the average age (sum of all items divided by their number )
+sum=0;
+avg="";
+for val in ages:
+    sum=sum+val;
+print(sum)
+
+sum
+
