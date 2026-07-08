@@ -169,5 +169,11 @@ for val in ages:
     sum=sum+val;
 print(sum)
 
-sum
+avg=sum/len(ages);
+print(avg);
 
+
+# Create a tuple containing names of your sisters and your brothers (imaginary siblings are fine)
+tup1 = ("a","b","c");
+tup2 = ("d","e","f");
+print(tup1 + tup2);
