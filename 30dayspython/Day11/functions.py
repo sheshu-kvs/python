@@ -167,3 +167,17 @@ def fact(num):
     print("Factorial Of Number ",fact);
 
 fact(5);
+
+
+# Write a function called greet which takes a default argument, name. If no argument 
+# is supplied it should print "Hello, Guest!", otherwise it should greet the person by name.
+
+
+def greet():
+    print("Hello Guest");
+
+# def greet(name):
+#     print("Hello!",name);
+
+# greet("deva");
+greet();
