@@ -152,3 +152,18 @@ def sum_of_odds(num):
     print("Count Number of odds",count);   
 
 sum_of_odds(100);
+
+count=0;
+for i in range(100,-1,-1):
+    if i%2!=0:
+        count=count+1;
+print(count)
+
+def fact(num):
+    fact=1;
+    while num > 0:
+        fact =  fact*num;
+        num=num-1;
+    print("Factorial Of Number ",fact);
+
+fact(5);
