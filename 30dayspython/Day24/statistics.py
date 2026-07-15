@@ -62,3 +62,38 @@ print(two_dimensional-10);
 print(two_dimensional*10);
 print(two_dimensional//10);
 print(two_dimensional**10);
+
+
+
+# getting the items from the 2 dimensional array
+print("First Row",multidimensional[0])
+print("Second Row",multidimensional[1])
+print("THird row",multidimensional[2])
+
+# getting the columns
+print("First Column ",multidimensional[:,0])
+print("First Column ",multidimensional[:,1])
+print("First Column ",multidimensional[:,2])
+
+
+# slicing the multidimensional array itmes
+print(multidimensional)
+# print(multidimensional[0:2])
+# print("first two_rows & Columns ",multidimensional[0:2,0:2])
+
+
+# two reverse the array
+print(multidimensional[::-1])
+
+
+# generating the random numbers
+randval = np.random.randint(0,11);
+print(randval)
+
+
+
+# arange are used to the  we need to use in this format
+# (start,step,stop)
+
+evenum = np.arange(0,20,2);
+print(evenum)
