@@ -44,9 +44,11 @@ i=int(input('Enter the num1 '));
 j=int(input('Enter the num2 '));
 k=int(input('Enter the num3 '));
 n=int(input('Enter the N value'));
-numlis=[(num1,num2,num3) for num1 in range(i) for num2 in range(j) for num3 in range(k)]
-sum=0;
-for (num1,num2,num3) in  numlis:
-    sum=num1+num2+num3;
-    if(sum  == n):
-        print(num1,num2,num3)
+numlis=[[num1,num2,num3] for num1 in range(i) for num2 in range(j) for num3 in range(k) if (num1+num2+num3) != n]
+print(numlis)
+# numlis=[(num1,num2,num3) for num1 in range(i) for num2 in range(j) for num3 in range(k)]
+# sum=0;
+# for (num1,num2,num3) in  numlis:
+#     sum=num1+num2+num3;
+#     if sum  != n:
+#         print(num1,num2,num3)
