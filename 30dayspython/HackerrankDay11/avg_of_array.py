@@ -1,16 +1,16 @@
-print("Enter the number of Students:")
-n=int(input());
+print("Enter the number of stu:")
+n=int(input())
 students={}
-sum={};
-for i in range((n)):
+for i in range(n):
     stu=input().split();
-    name,*mar=stu;
-    students[name]=mar;
-# print("Enter the stu name:")
-# name=input();
-# print(students[name])
-tot={}
-for val in students:
-    print(students[val])
-    for val_idx in students[val]:
-        tot=tot+students[val_idx]
+    name,*mark=stu;
+    marks=list(map(int, mark))
+    
+    students[name]=marks;
+print(students)
+tot=0;
+name=input();
+for mark12 in students[name]:
+    tot+=mark12;
+    len12=len(students[name]) 
+print(f"{tot/len12:.2f}")
