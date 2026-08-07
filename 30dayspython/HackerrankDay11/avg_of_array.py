@@ -7,7 +7,7 @@ for i in range(n):
     marks=list(map(int, mark))
     
     students[name]=marks;
-print(students)
+print(students) 
 tot=0;
 name=input();
 for mark12 in students[name]:
