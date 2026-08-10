@@ -108,6 +108,31 @@ def pt8():
         for j in range(0,i):
             print("-",end="");
         print();
+
+def pt9():
+    n=int(input());
+    for i in range(1,(2*n-1)+1):
+        stars=i;
+        if i>n:
+            stars=2*n-i;
+        for j in range(0,stars):
+            print("*",end="");
+        
+
+        print()
+
+def pt10():
+    n=int(input());
+    strt=1
+    for i in range(1,n+1):
+        if i%2==0:
+            strt=1;
+        else:
+            strt=0;
+        for j in range(0,i):
+            print(strt,end=" ");
+            strt=1-strt;
+        print()
 # pt1();
 # pt2();
 # pt3();
@@ -115,4 +140,6 @@ def pt8():
 # pt5();
 # pt6();
 # pt7();
-pt8();
+# pt8();
+# pt9();
+pt10();
