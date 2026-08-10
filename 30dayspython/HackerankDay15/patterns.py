@@ -64,18 +64,55 @@ def pt6():
 
 def pt6():
     n=int(input());
-    for i in range(1,n+1):
-        for j in range(1,(n-i+1)+1):
+    for i in range(0,n):
+        for j in range(0,(n-i-1)):
             print("-",end="");
-        for k in range(1,n+1,2):
-            print("*",end=" ");
-        for j in range(1,(n-i+1)+1):
-                    print("-",end="");
+        for k in range(0,(2*i+1)):
+            print("*",end="");
+        for j in range(0,n-i-1):
+            print("-",end="");
             
+        print();
+
+
+def pt7():
+    n=5;
+    for i in range(0,n):
+        for j in range(0,i):
+            print("-",end="");
+        for k in range(0,(2*n-(2*i+1))):
+            print("*",end="");
+        for j in range(0,i):
+            print("-",end="");
+            
+        print();
+
+
+def pt8():
+     n1=5;
+     for i in range(0,n1):
+        for j in range(0,(n1-i-1)):
+            print("-",end="");
+        for k in range(0,(2*i+1)):
+            print("*",end="");
+        for j in range(0,n1-i-1):
+            print("-",end="");
+                
+        print();
+     n=5;
+     for i in range(0,n):
+        for j in range(0,i):
+            print("-",end="");
+        for k in range(0,(2*n-(2*i+1))):
+            print("*",end="");
+        for j in range(0,i):
+            print("-",end="");
         print();
 # pt1();
 # pt2();
 # pt3();
 # pt4();
 # pt5();
-pt6();
+# pt6();
+# pt7();
+pt8();
