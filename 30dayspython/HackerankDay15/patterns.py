@@ -133,6 +133,57 @@ def pt10():
             print(strt,end=" ");
             strt=1-strt;
         print()
+
+
+def pt11():
+    n=int(input());
+    space=2*(n-1)
+    for i in range(1,n+1):
+        for j in range(1,i+1):
+            print(j,end="");
+        for k in range(1,space+1):
+            print("-",end="");
+        for j in range(i,0,-1):
+            print(j,end="");
+        space-=2;
+        print()  
+
+
+
+def pt12():
+    n=int(input());
+    num=1;
+    for i in range(1,n+1):
+        for j in range(1,i+1):
+            print(num,end="");
+            num=num+1;
+        print()
+
+def pt13():
+    n=int(input());
+    for i in range(n+1,0,-1):
+        for asc_ch in range(ord('A'),ord('A')+i):
+            print(chr(asc_ch),end="");
+        print()
+
+
+
+def pt14():
+    n=int(input());
+    for i in range(n+1,0,-1):
+        for asc_ch in range(ord('A'),ord('A')+i):
+            print(chr(asc_ch),end="");
+        print()
+
+
+def pt15():
+    n=int(input());
+    for i in range(0,n):
+        ch=ord('A')+i;
+        for j in range(0,i+1):
+            print(chr(ch),end="")
+        print();
+
 # pt1();
 # pt2();
 # pt3();
@@ -142,4 +193,9 @@ def pt10():
 # pt7();
 # pt8();
 # pt9();
-pt10();
+# pt10();
+# pt11();
+# pt12();
+# pt13();
+# pt14();
+pt15();
