@@ -184,6 +184,83 @@ def pt15():
             print(chr(ch),end="")
         print();
 
+
+def pagt12():
+    n=int(input());
+    for i in range(0,n):
+        for j in range(ord('E')-i,ord('E')+1):
+            print(chr(j),end="");
+        print()
+
+
+def pagt13():
+    n=int(input());
+    iniS=0;
+    for i in range(0,n):
+        # stars
+       
+        for j in range(n-i,0,-1):
+            print("*",end="");
+        
+
+        # space
+        for j in range(0,iniS):
+            print(" ",end="")
+        
+
+        # stars
+        for j in range(n-i,0,-1):
+            print("*",end="");
+        
+        print()
+        iniS+=2;
+
+
+
+
+def pagt13():
+    n=int(input());
+    iniS=0;
+    lrgspace=8;
+    for i in range(0,n):
+        # stars
+       
+        for j in range(n-i,0,-1):
+            print("*",end="");
+        
+
+        # space
+        for j in range(0,iniS):
+            print(" ",end="")
+        
+
+        # stars
+        for j in range(n-i,0,-1):
+            print("*",end="");
+        
+        print()
+        iniS+=2;
+
+    for i in range(0,n):
+        for j in range(0,i+1):
+            print("*",end="");
+            
+    
+            # space
+        for j in range(0,lrgspace):
+            print(" ",end="")
+            
+    
+            # stars
+        for j in range(0,i+1):
+            print("*",end="");
+            
+        print()
+        lrgspace-=2;
+    
+pagt13();
+
+
 # pt1();
 # pt2();
 # pt3();
