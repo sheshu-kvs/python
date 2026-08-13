@@ -262,22 +262,25 @@ def pagt13():
 
 def pt16():
     n=int(input());
-    inspace=8;
-    for i in range(0,n):
-        
+    inspace=2*n-2
+    for i in range(1,(2*n-1)+1):
+        st=i
+        if i>n:
+            st=2*n-i;
         # stars
-        for j in range(0,i+1):
+        for j in range(1,st+1):
             print("*",end="");
        
-        for j in range(0,inspace):
+        for j in range(1,inspace+1):
             print(" ",end="");
         
-        for j in range(0,i+1):
+        for j in range(1,st+1):
             print("*",end="");
          # space
-        if i>n:
+        if i<n:
+            inspace=inspace-2;
+        else:
             inspace=inspace+2;
-        inspace-=2;
         print()
 # pagt13();
 
