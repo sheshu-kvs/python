@@ -301,3 +301,37 @@ def pt16():
 # pt15();
 
 pt16();
+
+
+
+def patrightriles():
+    n=int(input());
+    tot=2*n-1;
+    for i in range(tot):
+        st=i;
+        if st>n:
+            st=st-i
+            -1;
+        else:
+            st=i;
+        for j in range(0,st+1):
+            print("*",end="");
+        print("");
+
+patrightriles();
+
+
+def reversediamond():
+    n=9;
+    spac=9
+    for i in range(5):
+        for j in range(0,i):
+            print("-",end="");
+        for k in range(spac):
+            print("*",end="");
+        for j in range(0,i):
+            print("-",end="");
+        spac=spac-2;
+        print();
+
+reversediamond();

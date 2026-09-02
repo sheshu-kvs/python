@@ -30,6 +30,33 @@ print(e);
 print(f);
 
 
+
+# String methods
+    
+def strval():
+    val="heLLo worlD";
+    # the first word to be capital
+    # print(val.capitalize())
+    # counting the nof times cahr was found
+    # print(val.count("l"))
+    # it will give the index number of the str
+    # print(val.index("l"))
+    # returns the concat str using the join
+    # print(" ".join(val));
+    # removes the values from the in starting or ending of str using the strip
+    print(val.strip("hel"))
+    # replace val with the given str
+    print(val.replace("hello","How"))
+    # return the each word to be the capital
+    print(val.title())
+    # check the startswith with the given string return true otherwise false
+    print(val.startswith("No"))
+    # converts uooer to lower ,lower to upper
+    print(val.swapcase())
+    new=val.split(" ");
+    print(new)
+strval()
+
 greeting="Hello,World";
 # print(greeting[::-1]);
 
