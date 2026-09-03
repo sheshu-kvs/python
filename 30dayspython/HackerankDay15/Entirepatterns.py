@@ -257,6 +257,16 @@ def pt13():
             print("*",end="");
         desspace-=2;
         print()
+
+
+def val():
+    n=10;
+    for i in range(1,11):
+        if i==10:
+            print("My name Deva",i);
+        else:
+            print("my arjun",i)
+
 # pt12()
 # pt1();
 # pt2();
@@ -271,4 +281,6 @@ def pt13():
 # pt11();
 # pt12();
 
-pt13();
+
+val();
+# pt13();
