@@ -38,7 +38,20 @@ def vowelorconso():
     else:
         print(lw,"is Consonent");
 
+def fibonacci():
+    print("Enter the number values to print the Fibonacci Sereis:")
+    n=int(input())
+    first=0;
+    second=1;
+    for i in range(n):
+        print(first)
+        tmp=second;
+        second=first+second;
+        first=tmp;
+        
+
 # findrectangle()
 # swapvalues()
 # greatestofthree()
+# fibonacci();
 vowelorconso();
