@@ -33,18 +33,21 @@ def reversenum():
         num=num//10;
     print("Reverse an number:",rev);
 
+
 def palin():
-    num=1234;
+    ip=121;
+    num=ip;
     rev=0;
-    valrl=num
     while num>0:
         rem=num%10;
         rev=rev*10+rem;
         num=num//10;
-    if valrl==rev:
-        print("Entered number is the palindrome",num)
+    print(ip)
+    print(rev)
+    if ip==rev:
+        print("Entered number is the palindrome",rev)
     else:
-        print("Entered number is the palindrome",num)
+        print("Entered number not the palindrome ",rev)
 
 palin();
 # reversenum();
