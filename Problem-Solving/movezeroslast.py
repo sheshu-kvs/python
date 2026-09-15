@@ -14,4 +14,28 @@ def movezeros():
         a[j]=0;
     print(a)
 
+# optimal
+def movezerosend():
+    a=[1,2,2,3,4,2,1,2,2];
+
+    j=-1;
+    for i in range(len(a)):
+        if a[i]==0:
+            j=i;
+            break;
+    for i in range(j+1,len(a)):
+        if 0 in a:
+
+            if a[i]!=0:
+                tmp=a[i]; 3
+                a[i]=a[j]; 0
+                a[j]=tmp; 3
+                j+=1;
+        else:
+            break;
+
+
+movezerosend()
+
+
 movezeros()
