@@ -11,5 +11,10 @@ def consquetivearray():
         if count>maxcount:
             maxcount=count;
     print(maxcount)
-
-consquetivearray();
+def factors():
+    num=int(input());
+    for i in range(1,num+1):
+        if num%i==0:
+            print(i)
+factors();
+# consquetivearray();
