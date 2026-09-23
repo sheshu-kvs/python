@@ -67,6 +67,32 @@ def searchitem():
             return "Found";
     return "Not Found";
 print(searchitem());
+
+
+
+def countoccurances():
+    a=[2,5,2,8,2,9,2];
+    it=5;
+    count=0;
+    for i in a:
+        if i==it:
+            count+=1;
+    print(count);
+
+def findsc():
+    a=[10,25,7,42,18,25];
+    p=0;
+    vp=0;
+    for i in range(len(a)):
+        if a[i]>p:
+            vp=p;
+            p=a[i];
+        elif a[i]>vp:
+            vp=a[i];
+    print(vp);      
+findsc();
+# countoccurances();
+# print(searchitem());
 # printreverse();
 # countodd();
 # counteven();
