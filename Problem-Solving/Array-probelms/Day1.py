@@ -66,6 +66,9 @@ def searchitem():
         if a[i]==sc:
             return "Found";
     return "Not Found";
+print(searchitem());
+
+
 
 def countoccurances():
     a=[2,5,2,8,2,9,2];
