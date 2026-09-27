@@ -39,7 +39,7 @@ def commitemstwoarrays():
 
 # using the brute
 def printnegativenum():
-    a=[-2,-4,-6,1,3,5];
+    a=[1,-2,3,-4,5,-6];
     for i in range(len(a)):
         if a[i]<0:
             print(a[i])
@@ -60,10 +60,25 @@ def printnegleft():
             count+=1;
     print(a2)
 
+
+# using the optimal
+def printnegleftopt():
+    a=[1,-2,3,-4,5,-6];
+    insert=0;
+    for i in range(len(a)):
+        if a[i]<0:
+            temp=a[i];
+            a[i]=a[insert];
+            a[insert]=temp;  
+            insert+=1;
+    print(a);
+
+
+
                                                
 
-
-printnegleft();
+printnegleftopt();
+# printnegleft();
 # printnegativenum();
 # commitemstwoarrays();
 # movezerobrute()
