@@ -38,6 +38,20 @@ def pairgivensum():
      
 
 
+
+
+def secondlg():
+    a=[10,25,7,42,18,42];
+    p=0;
+    vp=0;
+    for i in range(len(a)):
+        if a[i]>p:
+            vp=p;
+            p=a[i];
+        elif a[i]>vp and a[i]!=p:
+            vp=a[i];
+    print("second lg",vp)
 # leftrotatearrayby1();
 # rightrotatearray();
-pairgivensum();
+# pairgivensum();
+secondlg();

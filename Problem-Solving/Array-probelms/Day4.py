@@ -3,7 +3,7 @@ def merge2arr():
     a2=[7,8,10,12,25];
     i=0;
     j=0;
-    val=len(a1)+len(a2);
+    val=len(a1)+len(a2); 
     a3=[]
     while i<len(a1) and j<len(a2):
         if a1[i]<a2[j]:
@@ -21,11 +21,33 @@ def merge2arr():
     print(a3);
 
 def maxconsquetive():
-    a=[1,1,0,1,1,1,0,1];
+    # a=[1,1,0,1,1,1,0,1];
+    a=[0,0];
     count=0;
     maxcount=0;
     for i in range(len(a)):
-   
+        if a[i]==1:
+            count+=1;
+            if count>maxcount:
+                maxcount=count;
+        else:
+            count=0;
+    print(maxcount)
 
+
+def lftarray():
+    a=[1,2,3,4,5];
+    lst=0;
+    j=1
+    for i in range(len(a)):
+        if i==len(a)-1:
+            lst=a[len(a)-1];
+        else:
+            a[i-1]=a[i];
+            j+=1;
+   
+    print(a);
+
+lftarray();
 # maxconsquetive();
 # merge2arr();

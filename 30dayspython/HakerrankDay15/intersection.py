@@ -24,4 +24,29 @@ def setremove():
 
 
 
-setremove();
+# setremove();
+
+
+
+
+def setremove():
+    int(input());
+    s12=set(map(int,input().split()));
+    n=int(input());
+    for i in range(n):
+        ip=input().split();
+        
+        if ip[0]=="remove":
+            rm=int(ip[1])
+            if rm in s12:
+                s12.remove(rm);
+        elif ip[0]=="discard":
+            ds=int(ip[1]);
+            s12.discard(ds);
+        elif ip[0]=="pop":
+            s12.pop();
+    print(s12)
+    
+    
+    
+setremove()
