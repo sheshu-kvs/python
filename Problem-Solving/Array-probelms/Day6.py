@@ -13,16 +13,20 @@ def maxsubarrsum():
 
 # optimal
 def maxsubarrsum():
-    a=[-2 ,1 ,-3, 4, -1, 2, 1, -5]
+    # a=[-2 ,1 ,-3, 4, -1, 2, 1, -5]
+    a=[-1,2]
     max=float('-inf');
     sum=0;
-    for i in range(len(a)):
-        sum=sum+a[i];
-        if sum>max:
-            max=sum;
-        if sum<0:
-            sum=0;     
-    print(max)
+    if len(a)==1:
+        print(a[0]);
+    else:
+        for i in range(len(a)):
+            sum=sum+a[i];
+            if sum>max:
+                max=sum;
+            if sum<0:
+                sum=0;     
+        print(max)
 
 def minsubarrsum():
     a=[-2 ,1 ,-3, 4, -1, 2, 1, -5]
@@ -35,5 +39,22 @@ def minsubarrsum():
         if sum>0:
             sum=0;     
     print(min)
-minsubarrsum();
+
+
+def printsubarrsum():
+    a=[1,2,3,7,5];
+    sum=12;
+    for i in range(len(a)):
+        sm=0;
+        count=0
+        for j in range(i,len(a)):
+            sm=sm+a[j];
+            count+=1
+            if sm==sum:
+                # print(sm)
+                for val in range(i,count+1):
+                    print(a[val]);
+                    
+# minsubarrsum();
 # maxsubarrsum();
+printsubarrsum();
