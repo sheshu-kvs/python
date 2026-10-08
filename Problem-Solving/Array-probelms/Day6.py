@@ -42,7 +42,7 @@ def minsubarrsum():
 
 
 def printsubarrsum():
-    a=[1,2,3,7,5];
+    a=[2,3,7,1,5];
     sum=12;
     for i in range(len(a)):
         sm=0;
