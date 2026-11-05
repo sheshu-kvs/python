@@ -12,5 +12,15 @@ def rev():
     for i in range (n//2):
         s[i],s[n-i-1]=s[n-i-1],s[i];
     print(s)
+# palindrome 
+def rev2():
+   s="MAm";
+   val="".join([char.lower() for char in s if char.isalnum()]) 
+#    print(val);
+   new_s="";
+   for val2 in s:
+      
+       new_s=val2+new_s.lower();
+   return new_s==val; 
 
-rev();
+print(rev2());
